@@ -1,22 +1,22 @@
-var min1 = 0;
-var sec1 = 0;
-var msec1 = 0;
-var min2Head = document.querySelector(".min1");
-var sec2Head = document.querySelector(".sec1");
-var minsec2Head = document.querySelector(".msec1");
+var min = 0;
+var sec = 0;
+var msec = 0;
+var minHead = document.querySelector(".min");
+var secHead = document.querySelector(".sec");
+var msecHead = document.querySelector(".msec");
 var start = document.querySelector(".start");
 var interval;
 function timer() {
-  msec1++;
-  minsec2Head.innerHTML = msec1;
-  if (msec1 >= 100) {
-    sec1++;
-    sec2Head.innerHTML = sec1;
-    msec1 = 0;
-  } else if (sec1 >= 60) {
-    min1++;
-    min2Head.innerHTML = min1;
-    sec1 = 0;
+  msec++;
+  msecHead.innerHTML = msec;
+  if (msec >= 100) {
+    sec++;
+    secHead.innerHTML = sec;
+    msec = 0;
+  } else if (sec >= 60) {
+    min++;
+    minHead.innerHTML = min;
+    sec = 0;
   }
 }
 
