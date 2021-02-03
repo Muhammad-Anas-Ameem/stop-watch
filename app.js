@@ -32,11 +32,11 @@ function pauseWatch() {
 
 function resetWatch() {
   start.removeAttribute("disabled");
-  min1 = 0;
-  sec1 = 0;
-  msec1 = 0;
-  min2Head.innerHTML = min1;
-  sec2Head.innerHTML = sec1;
-  minsec2Head.innerHTML = msec1;
+  min = 0;
+  sec = 0;
+  msec = 0;
+  minHead.innerHTML = min;
+  secHead.innerHTML = sec;
+  msecHead.innerHTML = msec;
   clearInterval(interval);
 }
